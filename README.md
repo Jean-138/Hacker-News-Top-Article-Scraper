@@ -1,8 +1,4 @@
-## Web Scraping – Hacker News (Artigo Mais Votado)
 
-***
-
-## Descrição
 
 Este projeto em Python realiza web scraping no site Hacker News para identificar o artigo com maior número de votos na página principal.
 
