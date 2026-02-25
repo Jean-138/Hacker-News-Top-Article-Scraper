@@ -30,11 +30,12 @@ article_upvotes = [int(score.getText().split()[0]) for score in soup.find_all("s
 largest_number = max(article_upvotes)  # Pega o maior número de votos.
 largest_index = article_upvotes.index(largest_number)  # Encontra o índice do artigo com o maior número de votos.
 
-# Imprime o título e o link do artigo com o maior número de votos
-print(article_texts[largest_index])  # Imprime o título do artigo mais votado.
-print(article_links[largest_index])  # Imprime o link do artigo mais votado.
+# Imprime o título, link e upvotes do artigo com o maior número de votos
+print(f"Título: {article_texts[largest_index]}")
+print(f"Link: {article_links[largest_index]}")
+print(f"Upvotes: {article_upvotes[largest_index]}")
 
-# As linhas abaixo estão comentadas, mas mostram como você pode imprimir os títulos, links ou votos.
 # print(article_texts)  # Imprime todos os títulos dos artigos.
 # print(article_links)  # Imprime todos os links dos artigos.
+
 # print(article_upvotes)  # Imprime todos os números de votos dos artigos.
